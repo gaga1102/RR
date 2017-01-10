@@ -1,0 +1,154 @@
+#1 求平均值ANS=172
+setwd("c:/cert/")
+x <- read.csv("A-1.csv", header=FALSE)
+x
+str(x)
+x <- as.matrix(x)
+mean(x) 
+
+
+
+
+#2 求最大值ANS=126.9
+setwd("c:/cert/")
+x <- read.csv("A-3.csv", header=FALSE)
+x
+str(x)
+x <- as.matrix(x)
+max(x) 
+
+
+
+#3 求四分位ANS=13.5
+setwd("c:/cert/")
+x <- read.csv("A-4.csv", header=FALSE)
+x
+str(x)
+x <- as.matrix(x)
+summary(x,0.25)
+
+
+
+#4 求全距ANS=110
+setwd("c:/cert/")
+x <- read.csv("A-5.csv", header=TRUE)
+x
+str(x)
+x <- as.matrix(x)
+max(x)-min(x)
+
+
+
+#5 求變異數ANS=10
+setwd("c:/cert/")
+x <- read.csv("A-6.csv", header=FALSE)
+x
+str(x)
+x <- as.matrix(x)
+var(x)
+
+
+
+#6 求相關係數ANS=0.9108227
+setwd("c:/cert/")
+x <- read.csv("C-1.csv", header=TRUE)
+x
+hour <- x[2]
+grade <- x[3]
+cor(hour,grade)
+
+
+
+#7
+List彈性最大
+
+
+
+
+#8
+R的迴圈指令for while repeat
+
+
+
+#9 求y印出什麼ANS=NA
+x <-2
+if (x<3) y=NA else y=5
+print(y)
+
+
+
+#10 求階層ANS=24
+exec <- function(x){
+  if(x==0) x_sum=1
+  else
+    x_sum = x*exec(x-1)
+    return(x_sum)
+}
+exec(4)
+
+
+
+
+#11
+na.ra=TRUE
+
+
+
+#12 求命令 ANS=apply
+a <- matrix(1:12, nrow=3, byrow=TRUE)
+a
+apply(a,1,sum)
+apply(a,2,sum)
+
+
+
+
+#13 table=數字出現的次數
+x <- c(1,1,1,3,2,2,3)
+table(x)
+
+
+
+#14 ANS=identity
+identity bist plot pairs哪個不屬於高階繪圖
+
+
+
+
+#15 ANs
+#rbind 結合在一起
+ANS=(2X3的矩陣)           
+[,1] [,2] [,3]
+x    1    2    5
+y    3    5   10
+
+x <- c(1,2,5)
+y <- c(3,5,10)
+(rbind(x,y))
+
+
+
+#16 哪一個不是summary出現的
+x <-c(1,2,3)
+summary(x)
+
+
+
+#17 註解符號=#
+
+
+
+#18 變數宣告第一個字母須為英文字母或者句點
+
+
+
+#19 ANS=3
+ifelse(2>=3,2,3)
+
+
+
+#20 求餘數ANS= x1=4 x2=1
+x1 <- 9%%5
+x2 <- 9%%2
+x1
+x2
